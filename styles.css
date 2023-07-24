@@ -1,0 +1,106 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    display: block;
+}
+
+h3,
+p {
+    overflow-wrap: break-word;
+
+}
+
+h3 {
+    color: hsl(240, 1%, 17%);
+    font-weight: 700;
+}
+
+p {
+    color: hsla(0, 2%, 46%, 0.908);
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    text-align: center;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 10vh, left 50vw top 50vh;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.container .content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.content .avatar {
+    width: 25%;
+    margin-top: -50px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.content h3 {
+    margin-top: 10px;
+}
+
+.content span {
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+.container .social-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 10px 0;
+    padding: 1.5em 0;
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, 0.077)
+}
+
+.social-content .sec p {
+    font-size: .2em;
+    font-weight: lighter;
+    letter-spacing: .3em;
+    margin-top: 5px;
+}
+
+.attribution {
+    margin: 10px 0;
+}
+
+.attribution a {
+    text-decoration: none;
+    color: black;
+}
+
+.attribution a:hover {
+    color: blue;
+}
